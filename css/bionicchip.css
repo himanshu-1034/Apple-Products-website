@@ -1,0 +1,78 @@
+.bionicheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+.bionicheader h1{
+    letter-spacing: 2px;
+    font-size: 50px;
+
+}
+.bionicheader h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.bionicheader a{
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+.bodycss9
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;    
+}
+.bodycss9 .shadow{
+    position: relative;
+    margin: 100px auto;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(0deg,#000,#262626);
+}
+
+.bodycss9 .shadow::before,.bodycss9 .shadow::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 500%;
+    width: Calc(100% + 4px);
+    height: Calc(100% + 4px);
+    z-index: -1;
+    animation: animateeee 20s linear infinite;
+
+}
+.bodycss9 .shadow::after{
+    filter: blur(20px);
+}
+@keyframes animateeee{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.bodycss9 .shadow h1{
+    position: relative;
+    font-weight: 600;
+    top: 10%;
+    left: 18%;
+    color: grey;
+    font-size: 150px;
+}

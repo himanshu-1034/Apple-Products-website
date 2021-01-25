@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch series 6</title>
+    <link rel="stylesheet" href="css/productpages.css">
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Series 6</a>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <div class="contentbox">
+                <h2>The future of health <br> On your wrist.</h2>
+                <p>Measure your blood oxygen level with a revolutionary new sensor and app. Take an ECG anytime,
+                    anywhere. See your fitness metrics at a glance with the enhanced Always-On Retina display. With
+                    Apple Watch Series 6 on your wrist, a healthier, more active, more connected life is within reach.
+
+                </p>
+                <a href="apple_store.html">Buy Now</a>
+
+            </div>
+            <div class="imgbox">
+                <img src="images/watchpage/watch.png" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/watchpage/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/watchpage/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/watchpage/instagram.png" alt=""></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="/iphonepage.html">IPhones</a></li>
+            <li><a href="/ipadpage.html">IPad</a></li>
+            <li><a href="/macbookpage.html">Mac Book</a></li>
+            <li><a href="apple_store.html">Apple Store</a></li>
+            <li><a href="comingsoon.html">Coming soon</a></li>
+        </ul>
+    </section>
+    <script>
+        function toggle() {
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            banner.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

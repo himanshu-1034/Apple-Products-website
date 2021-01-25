@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPad Air</title>
+    <link rel="stylesheet" href="css/productpages.css">
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">New Apple Air</a>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <div class="contentbox">
+                <h2>Powerful. Colourful.
+                    <br>Wonderful.</h2>
+                <p>The iPad Air is a tablet computer designed, developed, and marketed by Apple Inc. It was announced on
+                    October 22, 2013, and was released on November 1, 2013. Part of the iPad line of tablet computers,
+                    the iPad Air features a thinner design than its predecessors with similarities to the
+                    contemporaneous iPad Mini 2.
+                </p>
+                <a href="apple_store.html">Buy Now</a>
+
+            </div>
+            <div class="imgbox">
+                <img src="images/watchpage/ipad.png" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/watchpage/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/watchpage/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/watchpage/instagram.png" alt=""></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="iphonepage.html">IPhones</a></li>
+            <li><a href="watchpage.html">IWatch</a></li>
+            <li><a href="macbookpage.html">Mac Book</a></li>
+            <li><a href="apple_store.html">Apple Store</a></li>
+            <li><a href="comingsoon.html">Coming soon</a></li>
+        </ul>
+    </section>
+    <script>
+        function toggle() {
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            banner.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

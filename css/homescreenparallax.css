@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0px;
+    background: #131313;
+    font-family: 'Montserrat', sans-serif;
+}
+section.homeparallax{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+.homeparallax{
+    background: url(../images/homescreenparallax2.jpg);
+    background-size: cover;
+
+}
+.homeparallax img{
+    width: 100%;
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+}
+.homeparallax h1{
+    color: rgba(233, 210, 210, 0.644);
+    font-size: 40px;
+    position: relative;
+    top: 44%;
+    left: 2%;
+}
+.homeparallax h2{
+    color: rgba(233, 210, 210, 0.644);
+    font-size: 40px;
+    position: relative;
+    top: 45%;
+    left: 2%;
+}
+.homeparallax h2{
+    animation: animate 1s linear forwards;
+    animation-delay: 2s;
+}
+.homeparallax h1{
+    animation: animate 1s linear forwards;
+    animation-delay: 3s;
+}
+.homeparallax h1,.homeparallax h2{
+    opacity: 0;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

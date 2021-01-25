@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.Particlesection{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000; */
+}
+
+.headerclass a{
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 40px;
+}
+.headerclass a{
+    color: black;
+    border: 2px solid white;
+    padding: 7px 20px;
+    /* margin: 10px 10px; */
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+}
+.headerclass h1{
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    border-radius: 20px;
+    left: 35%;
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+
+}

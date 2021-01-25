@@ -1,0 +1,126 @@
+.headingprivacy{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.headingprivacy h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+.headingprivacy p{
+    font-size: 20px;
+}
+
+.bodycss4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    overflow: hidden;
+
+}
+.bodycss4 .container{
+    position: relative;
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 0.5s;
+    transform: skewY(-10deg);
+
+}
+.bodycss4 .container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transition: 0.5s;
+}
+.bodycss4 .container .card::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+    background-color: slategray;
+    transform-origin: bottom;
+    transform:skewX(45deg);
+    transition: 0.5s;
+}
+.bodycss4 .container .card::after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 15px;
+    height: 50%;
+    background-color: slategray;
+    transform-origin: left;
+    transform:skewY(45deg);
+    transition: 0.5s;
+    border-bottom: 200px solid #d9d9d9;
+}
+.bodycss4 .container .card:hover{
+    transform: translateY(-40px);
+}
+.bodycss4 .container .card .imgbox{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.bodycss4 .container .card .imgbox img{
+    max-width: 100px;
+
+}
+.bodycss4 .container .card .imgbox h3{
+    margin-top: 10px;
+    position: relative;
+    color: #fff;
+}
+.bodycss4 .container .card .content{
+    position: relative;
+    /* width: 100%; */
+    height: 200px;
+    padding: 20px;
+    color: #777;
+    text-align: center;
+}
+.bodycss4 .container .card .content::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(transparent,transparent,rgba(0,0,0,0.1));
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bodycss4 .container .card:hover .content::before{
+    transform:  translateY(40px) skewX(45deg);
+    filter: blur(5px);
+
+}
+.bodycss4 .container .card:nth-child(1){
+    z-index: 3;
+}
+.bodycss4 .container .card:nth-child(2){
+    z-index: 2;
+}
+.bodycss4 .container .card:nth-child(3){
+    z-index: 1;
+}

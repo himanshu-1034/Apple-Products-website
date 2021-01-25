@@ -1,0 +1,66 @@
+.ipadheader{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.ipadheader h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+.ipadheader a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.ipadheader a:hover{
+    background: white;
+    color: black;
+}
+
+
+.bodycss7 .container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    transition: 0.5s;
+    padding: 20px;
+
+}
+.bodycss7 .container .content{
+    position: relative;
+    max-width: 800px;
+
+}
+.bodycss7 .container .content h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.bodycss7 .container .content img{
+    max-width: 100%;
+    display: block;
+}
+.bodycss7 .container .content a{
+    position: relative;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #111;
+    font-weight: 600;
+    background: #fff;
+}

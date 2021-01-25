@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upcoming goodies</title>
+    <link rel="stylesheet" href="css/comingsoon.css">
+</head>
+
+<body>
+    <section class="blockanimationbg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="upcomingbody1">
+        <div class="header">
+            <a href="#" class="logo">Apple Event - WWDC</a>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section1">
+            <div class="contentbox">
+                <h2>Coming Soon</h2>
+                <p>This Event will mainly focus on the enhancement in the software updates . And many more new products
+                    are going to launch. Don't miss it.</p>
+                    <div class="countdown">
+                        <div class="time"><div id="day"></div><span>Days</span></div>
+                        <div class="time"><div id="hour"></div><span>Hours</span></div>
+                        <div class="time"><div id="minute"></div><span>Minutes</span></div>
+                        <div class="time"><div id="second"></div><span>Seconds</span></div>
+                    </div>
+                    <a href="#" class="notify" onclick="toggle()">Notify Me !</a>
+                   
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="images/comingsoon/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/comingsoon/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="images/comingsoon/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h2>Stay Tuned</h2>
+            <p>Get Notified Before Event</p>
+            <div class="inputbox">
+                <form action="">
+                    <input type="email" name="" required id="" placeholder="Enter Email Address">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <img src="images/comingsoon/close.png" class="close" onclick="toggle()" alt="">
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        TweenMax.staggerFrom('.blockanimationbg span', 0.07, {
+            y: 300,
+            x: 300,
+            opacity: 0,
+        }, 0.07)
+    </script>
+    <script>
+        function toggle(){
+            var newsletter = document.querySelector('.newsletter');
+            newsletter.classList.toggle('active');
+        }
+
+
+
+        var countdate = new Date('Jan 1, 2022 00:00:00').getTime();
+        function newyear(){
+            var now = new Date().getTime();
+            gap = countdate - now;
+            var second =1000;
+            var minute = second*60;
+            var hour = minute*60;
+            var day = hour * 24;
+
+            var d = Math.floor(gap / (day));
+            var h = Math.floor((gap %(day) ) / (hour));
+            var m = Math.floor((gap % (hour)) / (minute));
+            var s = Math.floor((gap % (minute)) / (second));
+
+
+            document.getElementById('day').innerText = d;
+            document.getElementById('hour').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+        }
+        setInterval(function(){
+            newyear();
+        },1000)
+
+    </script>
+</body>
+
+</html>

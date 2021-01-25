@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/css/profileicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/homescreenparallax.css">
+    <link rel="stylesheet" href="css/homescreencutcard.css">
+    <link rel="stylesheet" href="css/menubar.css">
+    <link rel="stylesheet" href="css/iwatchparthome.css">
+    <link rel="stylesheet" href="css/employeescards.css">
+    <link rel="stylesheet" href="css/privacypart.css">
+    <link rel="stylesheet" href="css/eventsliderhomepage.css">
+    <link rel="stylesheet" href="css/scrolltotop.css">
+    <link rel="stylesheet" href="css/socialiconbutton.css">
+    <link rel="stylesheet" href="css/homesoftwarepart.css">
+    <link rel="stylesheet" href="css/bionicchip.css">
+    <link rel="stylesheet" href="css/lrdscreen.css">
+    <link rel="stylesheet" href="css/ipadhome.css">
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            $('.homeparallax img').css({
+                width: (100 + scroll / 4) + "%"
+            });
+        });
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+            });
+        });
+
+        function actiontoggle() {
+            var action = document.querySelector('.action');
+            action.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="action" onclick="actiontoggle()">
+        <span>+</span>
+        <ul>
+            <li><img src="images/socialconnect/facebook.png" alt="">Connect to Facebook</li>
+            <li><img src="images/socialconnect/instagram.png" alt="">Connect to Instagram</li>
+            <li><img src="images/socialconnect/twitter.png" alt="">Connect to Twitter</li>
+            <li><img src="images/socialconnect/linkedin.png" alt="">Connect to LinkedIn</li>
+            <li><img src="images/socialconnect/pinterest.png" alt="">Connect to Pinterest</li>
+        </ul>
+    </div>
+    <div class="scrolltop" onclick="scrolltotop()">
+
+    </div>
+
+    <section class="homeparallax">
+        <div class="navheader">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="watchpage.html">Iwatch</a></li>
+                    <li><a href="iphonepage.html">IPhones</a></li>
+                    <li><a href="ipadpage.html">IPad</a></li>
+                    <li><a href="macbookpage.html">Mac Book</a></li>
+                    <li><a href="apple_store.html">Apple Store</a></li>
+                    <li><a href="/ourReachPage.html">Our Connections</a></li>
+                    <li><a href="comingsoon.html">Coming soon</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <h2>APPLE !</h2>
+        <h1> Think Different!</h1>
+        <img src="images/homescreenparallax1.png" alt="">
+    </section>
+
+    <!-- bodycss10 -->
+
+    <section class="bodycss10">
+        <div class="profileaction">
+            <div class="profile" onclick="profilemenutoggle()">
+                <img src="/images/profile icon/man-user.png">
+            </div>
+            <div class="profilemenu">
+                <h3>User Profile<br><span>Quick Links</span></h3>
+                <ul>
+                    <li><img src="/images/profile icon/user.png"><a href="#">My Profile</a></li>
+                    <li><img src="/images/profile icon/edit.png"><a href="#">Edit Profile</a></li>
+                    <li><img src="/images/profile icon/envelope.png"><a href="#">Buy Cart</a></li>
+                    <li><img src="/images/profile icon/settings.png"><a href="#">Settings</a></li>
+                    <li><img src="/images/profile icon/question.png"><a href="#">Help</a></li>
+                    <li><img src="/images/profile icon/log-out.png"><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- bodycss10 -->
+
+
+    <!-- bodycss1 start -->
+    <section class="bodycss1">
+        <h1 class="heading1">Our Best Selling IPhones</h1>
+        <div class="container">
+            <div class="clip clip1">
+                <div class="content">
+                    <h2>IPhone 11 Pro</h2>
+                    <p>Powered with the newest A13 Bionic chip</p>
+                    <a href="/iphonepage.html">Learn More >></a>
+                </div>
+            </div>
+            <div class="clip clip2">
+                <div class="content">
+                    <h2>IPhone XR</h2>
+                    <p>Powered with the fastest A12 Bionic chip</p>
+                    <a href="/iphonepage.html">Learn More >></a>
+                </div>
+            </div>
+            <div class="clip clip3">
+                <div class="content">
+                    <h2>IPhone X</h2>
+                    <p>Powered with the very first A10 Bionic chip</p>
+                    <a href="/iphonepage.html">Learn More >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body css1 end -->
+    <!-- ipad -->
+    <div class="ipadheader">
+        <h1>the new ipad lineup is here.</h1>
+        <a href="/ipadpage.html">Learn more ></a>
+    </div>
+    <div class="bodycss7">
+        <div class="container" id="blur">
+            <div class="content">
+                <h2>With iPad, you get what you need from a computer, along with many incredible things you’d never
+                    expect from one.
+
+                </h2>
+                <img src="images/ipadair.jpg" alt="">
+                <a href="/ipadpage.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- ipad ends -->
+    <!-- iwatch -->
+    <div class="heading2">
+        <h1>OUR WATCH COLLECTION</h1><a href="/watchpage.html" class="learna">Learn more ></a>
+    </div>
+    <section class="bodycss2">
+        <div class="container">
+            <div class="box b1">
+                <h2 class="name">Series 3</h2>
+                <a href="/apple_store.html" class="buy">Order Now</a>
+                <!-- <div class="circle"></div> -->
+                <img src="images/iwatchs3.png" alt="" class="product">
+            </div>
+            <div class="box b2">
+                <h2 class="name">Series 4</h2>
+                <a href="/apple_store.html" class="buy">Order Now</a>
+                <!-- <div class="circle"></div> -->
+                <img src="images/iwatchs4.png" alt="" class="product">
+            </div>
+            <div class="box b3">
+                <h2 class="name">Series 5</h2>
+                <a href="/apple_store.html" class="buy">Order Now</a>
+                <!-- <div class="circle"></div> -->
+                <img src="images/iwatchs5.png" alt="" class="product">
+            </div>
+        </div>
+    </section>
+    <!-- iwatch -->
+    <!-- oled screens -->
+    <div class="screenheader">
+        <h1>
+            new liquid retina display
+        </h1>
+        <p>we are proud to introduce our newest and the most clearest screens. <br>the liquid retina display works in
+            all apple devices. </p>
+
+    </div>
+    <div class="bodycss8">
+        <div class="container">
+            <div class="mac">
+                <img src="images/newscreen/mac.png" alt="">
+                <div class="imgbox"></div>
+            </div>
+            <div class="macbook">
+                <img src="images/newscreen/macbook.png" alt="">
+                <div class="imgbox"></div>
+            </div>
+            <div class="iphone">
+                <img src="images/newscreen/iphone.png" alt="">
+                <div class="imgbox"></div>
+            </div>
+        </div>
+    </div>
+    <!-- oled screens end -->
+    <!-- a14 bionic chip -->
+    <div class="bionicheader">
+        <h1>A14 Bionic Is Here</h1>
+        <h3>New Displays require new processor to handle . <br> We present to you the fastest processing chip</h2>
+            <a
+                href="https://www.apple.com/in/newsroom/2020/10/all-new-ipad-air-with-advanced-a14-bionic-chip-available-to-order-starting-today/">See
+                Our IPads with Power Of A14</a> <!-- TODO implement bionic chip page -->
+    </div>
+    <div class="bodycss9">
+        <div class="shadow bc9">
+            <h1>A14</h1>
+        </div>
+    </div>
+    <!-- a14 bionic chip ends -->
+
+    <!-- ios14 -->
+    <div class="softwareheader">
+        <h1>I.O.S. 14 IS HERE !</h1>
+        <p>Finally! the wait is over . ios14 is here with spectacular new changes . it features more than 100 features .
+        </p>
+        <a href="https://www.apple.com/in/ios/ios-14/features/">View More</a>
+    </div>
+    <div class="bodycss6">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>All new widgets</h3>
+                        </div>
+                        <div class="content">
+                            <p>New IOS14 reorganises your homescreen with widgets you would have ever imagined .</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                            <!--TODO implement IOS 14 page-->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>Apple clips</h3>
+                        </div>
+                        <div class="content">
+                            <p>The new update releases a new app 'clips'. This app can find required application for
+                                you.</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>Messages App</h3>
+                        </div>
+                        <div class="content">
+                            <p>New IOS14 has brought tremendousichanges in the messages app also. for starters , you
+                                have new animojis.</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>New camera App</h3>
+                        </div>
+                        <div class="content">
+                            <p>Now you can change the video resolution from the App itself. no need to go to settings.
+                            </p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>Double/Triple Tap</h3>
+                        </div>
+                        <div class="content">
+                            <p>This is the very new feature added to iPhones. Just tap twice at back of your iphone and
+                                perform some task.</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>Sound Recogniser</h3>
+                        </div>
+                        <div class="content">
+                            <p>New IOS14 gives your iphones, the ability to recognise any unusual sound around you. it
+                                immediately notifies the user in such case.</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="slidertext">
+                            <h3>Translate App</h3>
+                        </div>
+                        <div class="content">
+                            <p>With the New IOS14 we added our own language translation app , so that language could
+                                never be a barrier .</p>
+                            <a href="https://www.apple.com/in/ios/ios-14/features/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ios14 ends -->
+
+    <!-- privacy -->
+    <div class="headingprivacy">
+        <h1>PRIVACY - APPLE</h1>
+        <p>We try our best to keep your identity and data secure and safe.</p>
+    </div>
+    <div class="bodycss4">
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/privacypart/lock.png" alt="">
+                    <h3>Locking system</h3>
+                </div>
+                <div class="content">
+                    <p>We , here at Apple work really hard to advance our lock and unlock feature to limit it only to
+                        the user .</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/privacypart/hacker.png" alt="">
+                    <h3>Hackers</h3>
+                </div>
+                <div class="content">
+                    <p>We use the latest technology to make sure that there is no casualty concerning cyber security.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/privacypart/cloud.png" alt="">
+                    <h3>Cloud protection</h3>
+                </div>
+                <div class="content">
+                    <p>We used advanced machine learning algorithms in 'iCloud' to keep your data safe upto us .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- privacy -->
+
+    <!-- OUR EMPLOYEES -->
+    <div class="employeeheading">
+        <h1>We have a Great Team also and they Work very Hard.</h1>
+        <a href="textface.html">See The Steve Jobs Portrait ></a>
+    </div>
+    <section class="bodycss3">
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/timcook.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Tim Cook</h2>
+                    <p>Tim Cook is the CEO of Apple and serves on its board of directors.
+
+                        Before being named CEO in August 2011, Tim was Apple’s chief operating officer and was
+                        responsible for all of the company’s worldwide sales and operations, including end-to-end
+                        management of Apple’s supply chain, sales activities, and service and support in all markets and
+                        countries.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/sabihkhan.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Sabih Khan</h2>
+                    <p>Sabih Khan is Apple’s senior vice president of Operations reporting to COO Jeff Williams. Sabih
+                        is in charge of Apple’s global supply chain, ensuring product quality and overseeing planning,
+                        procurement, manufacturing, logistics and product fulfillment functions, as well as Apple’s
+                        supplier responsibility programs that protect and educate workers at production facilities
+                        around the world.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/katherineadams.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Katherine Adams</h2>
+                    <p>Katherine Adams is Apple’s general counsel and senior vice president of Legal and Global
+                        Security, reporting to CEO Tim Cook. Kate serves on the company’s executive team and oversees
+                        all legal matters, including corporate governance, intellectual property, litigation and
+                        securities compliance, global security and privacy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/jeffwilliams.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Jeff Williams</h2>
+                    <p>Jeff Williams is Apple’s chief operating officer reporting to CEO Tim Cook. He oversees Apple’s
+                        entire worldwide operations, as well as customer service and support. He leads Apple’s renowned
+                        design team and the software and hardware engineering for Apple Watch. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/dierdreobrian.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>
+                        Deirdre O’Brien</h2>
+                    <p>Deirdre O’Brien is Apple’s senior vice president of Retail + People, reporting to CEO Tim Cook.
+
+                        As the leader of Apple’s retail and online teams, Deirdre supports their work to enrich the
+                        lives of millions of Apple customers every year.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/staff/crieg.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>
+                        Craig Federighi</h2>
+                    <p>Craig Federighi is Apple’s senior vice president of Software Engineering, reporting to CEO Tim
+                        Cook. Craig oversees the development of iOS and macOS. His teams are responsible for delivering
+                        the software at the heart of Apple’s innovative products, including the user interface,
+                        applications and frameworks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our employees end -->
+    <!-- event slider -->
+    <div class="eventheader">
+        <h1>OUR PREVIOUS EVENTS</h1>
+        <p>These are some of our previous events and some cool stuff we created .</p>
+    </div>
+    <div class="bodycss5">
+        <div class="box">
+            <span style="--j:1;"><img src="images/event slideshow/event1.jpg"></span>
+            <span style="--j:2;"><img src="images/event slideshow/event2.jpg"></span>
+            <span style="--j:3;"><img src="images/event slideshow/event3.jpg"></span>
+            <span style="--j:4;"><img src="images/event slideshow/event4.jpg"></span>
+            <span style="--j:5;"><img src="images/event slideshow/event5.jpg"></span>
+            <span style="--j:6;"><img src="images/event slideshow/event6.jpg"></span>
+            <span style="--j:7;"><img src="images/event slideshow/event7.jpg"></span>
+            <span style="--j:8;"><img src="images/event slideshow/event8.jpg"></span>
+        </div>
+    </div>
+    <!-- event slider ends -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".bodycss1",
+                start: "center center",
+                end: "bottom top",
+                markers: false,
+                scrub: true,
+                pin: true
+            }
+        })
+            .from(".heading1", {
+                x: innerWidth * 1
+            })
+            .from(".clip1", {
+                x: innerWidth * -1
+            })
+            .from(".clip2", {
+                x: innerWidth * 1
+            })
+            .from(".clip3", {
+                x: innerWidth * -1
+            })
+
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".bodycss2",
+                start: "center center",
+                end: "bottom top",
+                markers: false,
+                scrub: true,
+                pin: true
+            }
+        })
+            .from(".b1", {
+                x: innerWidth * 1
+            })
+            .from(".b2", {
+                x: innerWidth * -1
+            })
+            .from(".b3", {
+                x: innerWidth * 1
+            })
+    </script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".bodycss2 .container .box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var scroll = document.querySelector('.scrolltop');
+            scroll.classList.toggle("active", window.scrollY > 500);
+
+
+
+            var scrollprofile = document.querySelector('.bodycss10 .profileaction .profile');
+            scrollprofile.classList.toggle('profileimageactive', window.scrollY > 500);
+        });
+
+        function scrolltotop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <script>
+
+        function profilemenutoggle(){
+            const togglemenu = document.querySelector('.bodycss10 .profileaction .profilemenu');
+            togglemenu.classList.toggle('profileactive');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.employeeheading {
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.employeeheading h1{
+    text-align: center;
+}
+.employeeheading a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20%;
+    border: 1px white solid;
+    transition: 0.5s;
+}
+.employeeheading a:hover{
+    color: black;
+    background: white;
+}
+
+
+.bodycss3 .container{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.bodycss3 .container .card{
+    position: relative;
+    margin: 20px 0px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.bodycss3 .container .card:hover{
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+.bodycss3 .container .card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.bodycss3 .container .card:hover .imgbox{
+    transform: rotateY(-135deg);
+}
+
+.bodycss3 .container .card .imgbox .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.bodycss3 .container .card .details{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 20px;
+}

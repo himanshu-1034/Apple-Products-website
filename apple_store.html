@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/applestorepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 class="topheading">Apple Store</h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                    <div class="path text-uppercase">
+                         APPLE STORE / <a>Airpods</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center align-self-center">
+                            <img id="airpodsimg" src="images/apple store/airpods.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6 info">
+                            <div class="row title mb-2">
+                                <div class="col-md-9 col-12">
+                                    <h1>Airpods</h1>
+                                    <p>
+                                        Airpods are the new way to listen music . just put them on and drive all the way 
+                                        no strings attached .
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-12 text-right">
+                                    <a href="#" onclick="toggleheartcolor()"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star-half-alt checked"></span>
+                            <span id="reviews">21,250 reviews</span>
+                            <div class="row prices">
+                                <label class="radio">
+                                    <input type="radio" name="products" id="pro" value="airpods" checked>
+                                    <span>
+                                        <div class="row">
+                                            <big><b>Airpods</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 999.9
+                                        </div>
+                                    </span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="products" id="pro2" value="airpodspro">
+                                    <span>
+                                        <div class="row">
+                                            <big><b>Airpods Pro</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 1399.0
+                                        </div>
+                                    </span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col">
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <i class="fas fa-arrow-left"></i>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                        <div class="col text-right align-self-center">
+                            <button class="btn">Add To Cart</button>
+                            <button class="btn" onclick="homepage()">Return Home</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                    <div class="path text-uppercase">
+                         APPLE STORE / <a>Apple Watch</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center align-self-center">
+                            <img id="watchimg" src="images/apple store/iwatchs3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6 info">
+                            <div class="row title mb-2">
+                                <div class="col-md-9 col-12">
+                                    <h1>iWatch Series 3 / 5</h1>
+                                    <p>
+                                        This is apple series 3 . monitors your health . wherever you go it goes with you. its water resistent also
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-12 text-right">
+                                    <a href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star-half-alt checked"></span>
+                            
+                            <span id="reviews">51,250 reviews</span>
+                            <div class="row prices">
+                                <label class="radio">
+                                    <input type="radio" name="watchproducts" id="watch1" value="airpods" checked>
+                                    <span>
+                                        <div class="row">
+                                            <big><b>iWatch S-3</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 1999.9
+                                        </div>
+                                    </span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="watchproducts" id="watch2" value="airpodspro">
+                                    <span>
+                                        <div class="row">
+                                            <big><b>iWatch S-5</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 2399.0
+                                        </div>
+                                    </span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col">
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <i class="fas fa-arrow-left"></i>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                        <div class="col text-right align-self-center">
+                            <button class="btn">Add To Cart</button>
+                            <button class="btn" onclick="homepage()">Return Home</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                    <div class="path text-uppercase">
+                         APPLE STORE / <a>IPHONE</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center align-self-center">
+                            <img id="iphoneimg" src="images/apple store/iphone11.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6 info">
+                            <div class="row title mb-2">
+                                <div class="col-md-9 col-12">
+                                    <h1>Iphone 11/ 11 Pro</h1>
+                                    <p>
+                                       These are the new iphone linups . with the very new oled and liquid retna display
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-12 text-right">
+                                    <a href="#"><i class="fas fa-heart"></i></a>
+                                </div>
+                            </div>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span class="fas fa-star checked"></span>
+                            <span id="reviews">100,250 reviews</span>
+                            <div class="row prices">
+                                <label class="radio">
+                                    <input type="radio" name="phoneproducts" id="iphone1" value="iphone11" checked>
+                                    <span>
+                                        <div class="row">
+                                            <big><b>IPhone 11</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 3999.9
+                                        </div>
+                                    </span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="phoneproducts" id="iphone2" value="iphone11pro">
+                                    <span>
+                                        <div class="row">
+                                            <big><b>IPhone 11 pro</b></big>
+                                        </div>
+                                        <div class="row">
+                                            $ 5399.0
+                                        </div>
+                                    </span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col">
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <i class="fas fa-arrow-left"></i>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <i class="fas fa-arrow-right"></i>
+                              </a>
+                        </div>
+                        <div class="col text-right align-self-center">
+                            <button class="btn">Add To Cart</button>
+                            <button class="btn" onclick="homepage()">Return Home</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          
+        
+          
+          </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/applestore.js"></script>
+    
+   
+</body>
+
+</html>

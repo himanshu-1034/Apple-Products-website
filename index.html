@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WELCOME!</title>
+    <link rel="stylesheet" href="css/loadingstyle.css">
+    <link rel="stylesheet" href="css/spotlightbackground.css">
+
+</head>
+
+<body>
+    <section class="backgroundfocus">
+        <div class="focus">
+            <div class="focuscontent">
+                <h1>INNOVATION IS FUTURE</h1>
+
+                <a href="smokeanimation.html">
+                    <span class="front">WELCOME</span>
+                    <span class="center"></span>
+                    <span class="back">UNLOCK IT!</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- spotlight ends -->
+    <section class="loadingsection">
+        <div class="loader"></div>
+        <div class="count">
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            var count = 0;
+            var counter = setInterval(function () {
+                if (count < 101) {
+                    $('.count').text(count + '%');
+                    $('.loader').css('width', count + '%');
+                    count++;
+                } else {
+                    clearInterval(counter);
+                }
+
+            }, 40);
+
+
+        })
+        $(document).mousemove(function (e) {
+            var X = e.pageX;
+            var Y = e.pageY;
+            $('.focus').css('background', 'radial-gradient(circle at ' + X + 'px ' + Y +
+                'px, transparent, #000 20%)');
+        })
+    </script>
+    <script>
+        const button = document.querySelector("a");
+        button.addEventListener('click', function (e) {
+            var x = e.clientX - e.target.offsetLeft;
+            var y = e.clientY - e.target.offsetTop;
+            let ripples = document.createElement('span');
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            this.appendChild(ripples);
+            setTimeout(() => {
+                ripples.remove();
+            }, 800);
+        });
+    </script>
+</body>
+
+</html>

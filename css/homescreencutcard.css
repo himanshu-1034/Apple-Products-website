@@ -1,0 +1,81 @@
+
+.bodycss1{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    
+
+}
+.bodycss1 .container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+}
+.bodycss1 .container .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.bodycss1 .container .clip.clip1{
+    background:url(../images/homeiphone11pro.jpg);
+    background-size: cover;
+    clip-path: polygon(0% 0%,55% 0%,20% 100%,0% 100%);
+}
+.bodycss1 .container .clip.clip2{
+    background:url(../images/homeiphonexr.jpg);
+    background-size: cover;
+    clip-path: polygon(55% 0,100% 0,45% 100%,20% 100%);
+}
+.bodycss1 .container .clip.clip3{
+    background:url(../images/homeiphonex.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0,100% 0,100% 100%,45% 100%);
+}
+.bodycss1 .container:hover .clip{
+    clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+}
+.bodycss1 .container .clip:hover{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+.bodycss1 .container .clip .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55%;
+    padding: 20px;
+    background: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.bodycss1 .container .clip:hover .content{
+    opacity: 0.7;
+}
+.bodycss1 .container .clip .content a{
+    text-decoration: none;
+    border: 1px black solid;
+    border-radius: 30px;
+    background:whitesmoke;
+    color: black;
+    padding: 5px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.bodycss1 .container .clip .content a:hover{
+    background: black;
+    color: white;
+}
+
+.bodycss1 h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-right: 50px;
+    text-decoration: underline;
+}
